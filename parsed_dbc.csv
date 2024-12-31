@@ -1,0 +1,5 @@
+Message ID,Message Name,Signal Name,Start Bit,Length,Scaling,Offset,Unit
+100,ExampleMessage1,Speed,0,8,0.1,0,km/h
+100,ExampleMessage1,RPM,8,16,1,0,rpm
+200,ExampleMessage2,Temperature,0,8,1,0,°C
+200,ExampleMessage2,Voltage,8,16,0.01,0,V

@@ -1,0 +1,92 @@
+{
+    "messages": [
+        {
+            "id": 100,
+            "name": "ExampleMessage1",
+            "length": 8,
+            "senders": [
+                "NodeA"
+            ],
+            "signals": [
+                {
+                    "name": "Speed",
+                    "start_bit": 0,
+                    "length": 8,
+                    "scaling": 0.1,
+                    "offset": 0,
+                    "unit": "km/h",
+                    "multiplexer_signal": null,
+                    "multiplexer_ids": null,
+                    "receivers": [
+                        "NodeB"
+                    ],
+                    "comment": "The speed of the vehicle in km/h."
+                },
+                {
+                    "name": "RPM",
+                    "start_bit": 8,
+                    "length": 16,
+                    "scaling": 1,
+                    "offset": 0,
+                    "unit": "rpm",
+                    "multiplexer_signal": null,
+                    "multiplexer_ids": null,
+                    "receivers": [
+                        "NodeB"
+                    ],
+                    "comment": "The engine revolutions per minute."
+                }
+            ],
+            "comment": "This is an example message with Speed and RPM signals."
+        },
+        {
+            "id": 200,
+            "name": "ExampleMessage2",
+            "length": 4,
+            "senders": [
+                "NodeB"
+            ],
+            "signals": [
+                {
+                    "name": "Temperature",
+                    "start_bit": 0,
+                    "length": 8,
+                    "scaling": 1,
+                    "offset": 0,
+                    "unit": "\u00c2\u00b0C",
+                    "multiplexer_signal": null,
+                    "multiplexer_ids": null,
+                    "receivers": [
+                        "NodeA"
+                    ],
+                    "comment": "Ambient temperature in Celsius."
+                },
+                {
+                    "name": "Voltage",
+                    "start_bit": 8,
+                    "length": 16,
+                    "scaling": 0.01,
+                    "offset": 0,
+                    "unit": "V",
+                    "multiplexer_signal": null,
+                    "multiplexer_ids": null,
+                    "receivers": [
+                        "NodeA"
+                    ],
+                    "comment": "Battery voltage in Volts."
+                }
+            ],
+            "comment": "This is another example message with Temperature and Voltage signals."
+        }
+    ],
+    "nodes": [
+        {
+            "name": "NodeA",
+            "comment": null
+        },
+        {
+            "name": "NodeB",
+            "comment": null
+        }
+    ]
+}
